@@ -273,7 +273,7 @@ yao run models.supplier.Find 1 '::{"withs":{ "users": { "query":{"select":["name
 指定关联用户筛选条件:
 
 ```bash
-yao run models.supplier.Find 1 '::{"withs":{ "users": { "wheres":[{"column":"name", "value":"张无忌"}] } }}'
+yao run models.supplier.Find 1 '::{"withs":{ "users": { "query": {"wheres":[{"column":"name", "value":"张无忌"}] }} }}'
 ```
 
 ## 嵌套查询
